@@ -106,9 +106,12 @@
   <div class="wrap">
     <a class="logo" href="./"><span class="logo-mark">W</span>Wraps<span class="logo-diy">DIY</span></a>
     <ul>
-      <li><a href="products/custom-van-wrap/">Van wraps</a></li>
-      <li><a href="products/truck-wraps/">Truck wraps</a></li>
-      <li><a href="products/magnetic-signs/">Magnetic signs</a></li>
+      <li><a href="products/custom-van-wrap/">Vans</a></li>
+      <li><a href="products/truck-wraps/">Trucks</a></li>
+      <li><a href="products/magnetic-signs/">Magnets</a></li>
+      <li><a href="products/window-decals/">Windows</a></li>
+      <li><a href="products/wall-graphics/">Walls</a></li>
+      <li><a href="products/floor-decals/">Floors</a></li>
       <li><a href="pages/wholesale/" class="nav-ws">Wholesale</a></li>
     </ul>
     <div class="navr">
@@ -127,6 +130,10 @@
       <a class="item" href="products/custom-van-wrap/">Custom van wraps <span>from $237.60</span></a>
       <a class="item" href="products/truck-wraps/">Truck wraps <span>→</span></a>
       <a class="item" href="products/magnetic-signs/">Magnetic signs <span>→</span></a>
+      <a class="item" href="products/window-decals/">Window decals <span>→</span></a>
+      <a class="item" href="products/perforated-window-vinyl/">Perforated window vinyl <span>→</span></a>
+      <a class="item" href="products/wall-graphics/">Wall graphics <span>→</span></a>
+      <a class="item" href="products/floor-decals/">Floor decals <span>→</span></a>
       <a class="item" href="#how">How it works <span>→</span></a>
       <a class="item" href="#reviews">Reviews <span>→</span></a>
       <a class="item" href="#gallery">Gallery <span>→</span></a>
@@ -200,6 +207,22 @@
         </div>
         <a class="btn" href="products/magnetic-signs/">Choose my vehicle</a>
       </article>
+    </div>
+  </div>
+</section>
+
+<section id="graphics" data-home>
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">For your business</span>
+      <h2>Window, wall &amp; <em>floor graphics</em></h2>
+      <p>The same custom printing for your storefront, office and floors. Priced by size, with free design.</p>
+    </div>
+    <div class="ws-grid" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr))">
+      <div class="ws-card"><div class="gscene" data-kind="perf" data-color="#c0392b" data-label="SALE" style="border-radius:10px;overflow:hidden;margin-bottom:6px"></div><h3><a href="products/perforated-window-vinyl/" style="color:inherit">Perforated window vinyl</a></h3><p><b>From $29.95</b> · Full color outside, see out from inside.</p><a class="btn" href="products/perforated-window-vinyl/" style="margin-top:6px">Shop now</a></div>
+      <div class="ws-card"><div class="gscene" data-kind="decal" data-color="#0f5f8f" data-label="YOUR LOGO" style="border-radius:10px;overflow:hidden;margin-bottom:6px"></div><h3><a href="products/window-decals/" style="color:inherit">Window decals</a></h3><p><b>From $29.95</b> · Logos, store hours and window clings.</p><a class="btn" href="products/window-decals/" style="margin-top:6px">Shop now</a></div>
+      <div class="ws-card"><div class="gscene" data-kind="wall" data-color="#1f8a5c" data-label="YOUR LOGO" style="border-radius:10px;overflow:hidden;margin-bottom:6px"></div><h3><a href="products/wall-graphics/" style="color:inherit">Wall graphics</a></h3><p><b>From $49.95</b> · Logo walls, office graphics and murals.</p><a class="btn" href="products/wall-graphics/" style="margin-top:6px">Shop now</a></div>
+      <div class="ws-card"><div class="gscene" data-kind="floor" data-color="#6c3fa0" data-label="THIS WAY" style="border-radius:10px;overflow:hidden;margin-bottom:6px"></div><h3><a href="products/floor-decals/" style="color:inherit">Floor decals</a></h3><p><b>From $39.95</b> · Anti-slip logos, arrows and promos.</p><a class="btn" href="products/floor-decals/" style="margin-top:6px">Shop now</a></div>
     </div>
   </div>
 </section>
@@ -399,7 +422,7 @@
         <form class="news" id="news"><input id="email" aria-label="Email address" type="email" placeholder="Enter your email..." required><button class="nbtn" type="submit" aria-label="Subscribe">→</button></form>
         <p class="news-msg" id="newsMsg" aria-live="polite"></p>
       </div>
-      <div><h4>Shop</h4><ul><li><a href="products/custom-van-wrap/">Custom van wraps</a></li><li><a href="products/truck-wraps/">Truck wraps</a></li><li><a href="products/magnetic-signs/">Magnetic signs</a></li><li><a href="pages/wholesale/">Wholesale for shops &amp; installers</a></li></ul></div>
+      <div><h4>Shop</h4><ul><li><a href="products/custom-van-wrap/">Custom van wraps</a></li><li><a href="products/truck-wraps/">Truck wraps</a></li><li><a href="products/magnetic-signs/">Magnetic signs</a></li><li><a href="products/window-decals/">Window decals</a></li><li><a href="products/perforated-window-vinyl/">Perforated window vinyl</a></li><li><a href="products/wall-graphics/">Wall graphics</a></li><li><a href="products/floor-decals/">Floor decals</a></li><li><a href="pages/wholesale/">Wholesale for shops &amp; installers</a></li></ul></div>
       <div><h4>Contact us</h4><ul><li>(555) 123-4567</li><li>hello@example.com</li><li><a href="#faq">FAQs</a></li></ul></div>
       <div><h4>Policies</h4><ul><li><a href="#top">Refunds & returns</a></li><li><a href="#top">Shipping</a></li><li><a href="#top">Privacy</a></li><li><a href="#top">Terms</a></li></ul></div>
     </div>
@@ -484,6 +507,48 @@ function truck(color, label, opts){
   return '<svg viewBox="'+vb+'" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder '+(opts.box ? "box truck" : "pickup truck")+' with '+(cover === "decal" ? "door decals" : cover + " wrap")+'">'
     + (opts.bg ? '<rect x="-20" width="440" height="220" fill="'+opts.bg+'"/>' : '') + s + '</svg>';
 }
+// Placeholder scene illustrations for window, wall and floor graphics
+var SC = 0;
+function scene(kind, color, label, sub){
+  sub = sub || "(555) 123-4567 · yourbrand.com";
+  var id = "sc" + (SC++), s = '<svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder '+kind+' example">';
+  var T = function(x, y, sz, txt, fill, w){ return '<text x="'+x+'" y="'+y+'" font-family="'+(w===600?'Figtree':'Archivo')+',Arial" font-weight="'+(w||900)+'" font-size="'+sz+'" fill="'+(fill||'#fff')+'" text-anchor="middle">'+txt+'</text>'; };
+  if (kind === "perf" || kind === "decal") {
+    s += '<rect width="400" height="220" fill="#eef2f5"/><rect x="20" y="16" width="360" height="34" rx="4" fill="#22303b"/>' + T(200, 39, 15, "MAIN STREET")
+       + '<rect x="20" y="50" width="360" height="160" fill="#d5dde3"/>'
+       + '<rect x="176" y="70" width="48" height="140" fill="#8aa3b5"/><circle cx="215" cy="142" r="3" fill="#22303b"/>';
+    [[34, 130], [236, 130]].forEach(function(w, i){
+      var x = w[0], wd = w[1];
+      if (kind === "perf") {
+        s += '<rect x="'+x+'" y="70" width="'+wd+'" height="122" fill="'+color+'"/>';
+        if (i === 0) s += '<pattern id="'+id+'" width="6" height="6" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="1.5" fill="#fff" fill-opacity=".35"/></pattern>';
+        s += '<rect x="'+x+'" y="70" width="'+wd+'" height="122" fill="url(#'+id+')"/>'
+           + (i === 0 ? T(x+wd/2, 128, 17, label) + T(x+wd/2, 146, 8, sub, "#fff", 600) : T(x+wd/2, 128, 22, "NOW OPEN") + T(x+wd/2, 146, 9, "Walk-ins welcome", "#fff", 600));
+      } else {
+        s += '<rect x="'+x+'" y="70" width="'+wd+'" height="122" fill="#bcd3e2"/><path d="M'+(x+10)+' 186 L'+(x+60)+' 76" stroke="#fff" stroke-opacity=".5" stroke-width="6"/>';
+        if (i === 0) s += '<rect x="'+(x+15)+'" y="96" width="'+(wd-30)+'" height="46" rx="8" fill="'+color+'"/>' + T(x+wd/2, 120, 14, label) + T(x+wd/2, 134, 7, sub, "#fff", 600);
+        else s += T(x+wd/2, 104, 15, "OPEN", color) + [0,1,2,3].map(function(k){ return '<rect x="'+(x+30)+'" y="'+(116+k*12)+'" width="'+(wd-60)+'" height="5" rx="2" fill="#22303b" fill-opacity=".45"/>'; }).join("");
+      }
+      s += '<rect x="'+x+'" y="70" width="'+wd+'" height="122" fill="none" stroke="#22303b" stroke-width="3"/>';
+    });
+  } else if (kind === "wall") {
+    s += '<rect width="400" height="220" fill="#eef2f5"/><polygon points="0,178 400,178 400,220 0,220" fill="#c9d2d8"/>'
+       + '<rect x="34" y="20" width="332" height="140" rx="4" fill="'+color+'"/>'
+       + '<circle cx="300" cy="60" r="70" fill="#fff" fill-opacity=".12"/><circle cx="90" cy="150" r="50" fill="#fff" fill-opacity=".1"/>'
+       + T(200, 88, 30, label) + T(200, 112, 12, sub, "#fff", 600)
+       + '<rect x="250" y="150" width="110" height="10" rx="2" fill="#5b6b78"/><rect x="258" y="160" width="8" height="34" fill="#5b6b78"/><rect x="344" y="160" width="8" height="34" fill="#5b6b78"/>'
+       + '<rect x="60" y="150" width="34" height="44" rx="4" fill="#7f8f9c"/><rect x="66" y="128" width="22" height="26" rx="10" fill="#1f8a5c"/>';
+  } else {
+    s += '<rect width="400" height="220" fill="#eef2f5"/><rect x="0" y="0" width="400" height="86" fill="#dfe6eb"/>'
+       + '<rect x="40" y="18" width="70" height="68" fill="#bcd3e2" stroke="#9fb0bd" stroke-width="2"/><rect x="290" y="18" width="70" height="68" fill="#bcd3e2" stroke="#9fb0bd" stroke-width="2"/>'
+       + '<polygon points="0,220 400,220 340,86 60,86" fill="#cfd7dd"/>'
+       + '<ellipse cx="200" cy="170" rx="118" ry="36" fill="'+color+'"/><ellipse cx="200" cy="170" rx="108" ry="30" fill="none" stroke="#fff" stroke-opacity=".5" stroke-width="2"/>'
+       + T(200, 175, 18, label) + T(200, 190, 8, sub, "#fff", 600)
+       + [[150,120],[175,108],[225,108],[250,120]].map(function(f){ return '<ellipse cx="'+f[0]+'" cy="'+f[1]+'" rx="7" ry="4" fill="'+color+'" fill-opacity=".7"/>'; }).join("");
+  }
+  return s + '</svg>';
+}
+document.querySelectorAll(".gscene").forEach(function(el){ el.innerHTML = scene(el.dataset.kind, el.dataset.color, el.dataset.label); });
 document.querySelectorAll(".prod-img").forEach(function(el){
   if (el.dataset.truck) { el.insertAdjacentHTML("beforeend", truck(el.dataset.truck, "YOUR LOGO", {cover:"half"})); return; }
   el.insertAdjacentHTML("beforeend", van(el.dataset.van, el.dataset.car ? "YOUR NAME" : "YOUR LOGO", {car: !!el.dataset.car, wrap: !!el.dataset.wrap}));
