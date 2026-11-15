@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://neon-kangaroo-f2364e.netlify.app/sitemap.xml
+Sitemap: https://wrapsdiy.com/sitemap.xml
