@@ -1,2 +1,9 @@
 [build]
   publish = "."
+
+# DIY van wrap kits page removed; send old links and search traffic to the van wrap product
+[[redirects]]
+  from = "/pages/diy-van-wrap-kits/*"
+  to = "/products/custom-van-wrap/"
+  status = 301
+  force = true
