@@ -41,12 +41,10 @@
   <div class="wrap">
     <a class="logo" href="../../"><span class="logo-mark">W</span>Wraps<span class="logo-diy">DIY</span></a>
     <ul>
-      <li><a href="../../products/custom-van-wrap/">Vans</a></li>
-      <li><a href="../../products/truck-wraps/">Trucks</a></li>
-      <li><a href="../../products/magnetic-signs/">Magnets</a></li>
-      <li><a href="../../products/window-decals/">Windows</a></li>
-      <li><a href="../../products/wall-graphics/">Walls</a></li>
-      <li><a href="../../products/floor-decals/">Floors</a></li>
+      <li class="dd"><button class="dd-btn" type="button" aria-expanded="false" aria-haspopup="true" onclick="var l=this.parentNode,o=!l.classList.contains('open');document.querySelectorAll('.nav .dd.open').forEach(function(x){x.classList.remove('open');x.firstElementChild.setAttribute('aria-expanded','false')});l.classList.toggle('open',o);this.setAttribute('aria-expanded',String(o))">Vehicle graphics <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button>
+        <div class="dd-menu"><a href="../../products/custom-van-wrap/"><b>Van wraps</b><small>Full wrap, half wrap or decals</small></a><a href="../../products/truck-wraps/"><b>Truck wraps</b><small>Pickups and box trucks</small></a><a href="../../products/magnetic-signs/"><b>Magnetic signs</b><small>Cars, trucks and vans</small></a></div></li>
+      <li class="dd"><button class="dd-btn" type="button" aria-expanded="false" aria-haspopup="true" onclick="var l=this.parentNode,o=!l.classList.contains('open');document.querySelectorAll('.nav .dd.open').forEach(function(x){x.classList.remove('open');x.firstElementChild.setAttribute('aria-expanded','false')});l.classList.toggle('open',o);this.setAttribute('aria-expanded',String(o))">Business graphics <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button>
+        <div class="dd-menu"><a href="../../products/window-decals/"><b>Window decals</b><small>Logos, hours and window clings</small></a><a href="../../products/perforated-window-vinyl/"><b>Perforated window vinyl</b><small>See out from inside</small></a><a href="../../products/wall-graphics/"><b>Wall graphics</b><small>Logo walls and murals</small></a><a href="../../products/floor-decals/"><b>Floor decals</b><small>Anti-slip logos and arrows</small></a></div></li>
       <li><a href="../../pages/wholesale/" class="nav-ws">Wholesale</a></li>
     </ul>
     <div class="navr">
@@ -62,18 +60,20 @@
   </div>
   <nav class="mobile-menu" id="mobileMenu" hidden>
     <div class="wrap">
-      <a class="item" href="../../products/custom-van-wrap/">Custom van wraps <span>from $237.60</span></a>
+      <p class="mm-h">Vehicle graphics</p>
+      <a class="item" href="../../products/custom-van-wrap/">Van wraps <span>→</span></a>
       <a class="item" href="../../products/truck-wraps/">Truck wraps <span>→</span></a>
       <a class="item" href="../../products/magnetic-signs/">Magnetic signs <span>→</span></a>
+      <p class="mm-h">Business graphics</p>
       <a class="item" href="../../products/window-decals/">Window decals <span>→</span></a>
       <a class="item" href="../../products/perforated-window-vinyl/">Perforated window vinyl <span>→</span></a>
       <a class="item" href="../../products/wall-graphics/">Wall graphics <span>→</span></a>
       <a class="item" href="../../products/floor-decals/">Floor decals <span>→</span></a>
+      <p class="mm-h">Help</p>
       <a class="item" href="#how">How it works <span>→</span></a>
       <a class="item" href="#reviews">Reviews <span>→</span></a>
-      <a class="item" href="#gallery">Gallery <span>→</span></a>
       <a class="item" href="#faq">FAQs <span>→</span></a>
-      <a class="item" href="../../pages/wholesale/">Wholesale <span>Shops &amp; installers</span></a>
+      <a class="item mm-ws" href="../../pages/wholesale/">Wholesale <span>Shops &amp; installers</span></a>
     </div>
   </nav>
 </header>
@@ -336,7 +336,7 @@
         <form class="news" id="news"><input id="email" aria-label="Email address" type="email" placeholder="Enter your email..." required><button class="nbtn" type="submit" aria-label="Subscribe">→</button></form>
         <p class="news-msg" id="newsMsg" aria-live="polite"></p>
       </div>
-      <div><h4>Shop</h4><ul><li><a href="../../products/custom-van-wrap/">Custom van wraps</a></li><li><a href="../../products/truck-wraps/">Truck wraps</a></li><li><a href="../../products/magnetic-signs/">Magnetic signs</a></li><li><a href="../../products/window-decals/">Window decals</a></li><li><a href="../../products/perforated-window-vinyl/">Perforated window vinyl</a></li><li><a href="../../products/wall-graphics/">Wall graphics</a></li><li><a href="../../products/floor-decals/">Floor decals</a></li><li><a href="../../pages/wholesale/">Wholesale for shops &amp; installers</a></li></ul></div>
+      <!--shop--><div><h4>Vehicle graphics</h4><ul><li><a href="../../products/custom-van-wrap/">Van wraps</a></li><li><a href="../../products/truck-wraps/">Truck wraps</a></li><li><a href="../../products/magnetic-signs/">Magnetic signs</a></li></ul></div><div><h4>Business graphics</h4><ul><li><a href="../../products/window-decals/">Window decals</a></li><li><a href="../../products/perforated-window-vinyl/">Perforated window vinyl</a></li><li><a href="../../products/wall-graphics/">Wall graphics</a></li><li><a href="../../products/floor-decals/">Floor decals</a></li><li><a href="../../pages/wholesale/">Wholesale for shops &amp; installers</a></li></ul></div><!--/shop-->
       <div><h4>Contact us</h4><ul><li>(555) 123-4567</li><li>hello@example.com</li><li><a href="#faq">FAQs</a></li></ul></div>
       <div><h4>Policies</h4><ul><li><a href="#top">Refunds & returns</a></li><li><a href="#top">Shipping</a></li><li><a href="#top">Privacy</a></li><li><a href="#top">Terms</a></li></ul></div>
     </div>

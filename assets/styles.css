@@ -755,3 +755,24 @@ html,body{overflow-x:clip}
 html,body{margin:0}
 img,svg{max-width:100%}
 [hidden]{display:none!important}
+
+/* NAV GROUPS: dropdown menus, grouped mobile menu, grouped footer */
+.nav ul > li{position:relative}
+.dd-btn{display:inline-flex;align-items:center;gap:6px;background:none;border:0;padding:10px 0;font:inherit;color:inherit;cursor:pointer}
+.dd-btn svg{transition:transform .15s}
+.dd:hover .dd-btn svg,.dd.open .dd-btn svg{transform:rotate(180deg)}
+.dd-btn:hover{color:var(--navy-2)}
+.dd-menu{display:none;position:absolute;top:100%;left:-14px;z-index:60;min-width:290px;padding:8px;background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:0 14px 36px rgba(0,38,62,.14)}
+.dd:hover .dd-menu,.dd:focus-within .dd-menu,.dd.open .dd-menu{display:grid;gap:2px}
+.nav .dd-menu a{display:grid;gap:2px;padding:10px 12px;border-radius:10px;text-decoration:none}
+.nav .dd-menu a:hover{background:var(--panel);text-decoration:none;color:inherit}
+.dd-menu b{font-weight:700}
+.dd-menu small{color:var(--muted);font-weight:500;font-size:.82rem}
+.mobile-menu .mm-h{margin:14px 4px 0;font:600 .74rem var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.mobile-menu .mm-h:first-child{margin-top:4px}
+.mobile-menu a.mm-ws{margin-top:10px;border-top:1px solid var(--line)}
+.nav ul{align-items:center}
+.fgrid{grid-template-columns:repeat(4,1fr)}
+.fgrid .fnews{grid-column:1/-1;max-width:560px}
+@media (max-width:860px){.fgrid{grid-template-columns:1fr 1fr}}
+@media (max-width:480px){.fgrid{grid-template-columns:1fr}}
